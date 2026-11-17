@@ -4,7 +4,7 @@ import { ChevronDown, Phone } from "lucide-react";
 export function Navbar() {
   return (
     <header className="mx-auto mt-3 max-w-[1800px] px-4 md:px-6">
-      <div className="flex min-h-[58px] items-center justify-between gap-5 rounded-xl border border-slate-200 bg-white px-4 shadow-[0_3px_12px_rgba(15,35,55,0.08)] md:px-6">
+      <div className="flex min-h-14.5 items-center justify-between gap-5 rounded-xl border border-slate-200 bg-white px-4 shadow-[0_3px_12px_rgba(15,35,55,0.08)] md:px-6">
         <a href="#" aria-label="Low Cost Vibes home" className="shrink-0">
           <Image
             src="/light-logo.png"
@@ -12,7 +12,7 @@ export function Navbar() {
             width={145}
             height={36}
             priority
-            className="h-auto w-[112px] md:w-[145px]"
+            className="h-auto w-28 md:w-36.25"
           />
         </a>
 

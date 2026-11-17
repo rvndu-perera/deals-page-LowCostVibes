@@ -15,7 +15,7 @@ export function SectionNav() {
   return (
     <nav
       aria-label="Holiday details"
-      className="sticky top-2 z-30 mt-3 mb-4 overflow-x-auto rounded-xl border border-slate-200 bg-white/95 px-2 shadow-[0_3px_12px_rgba(15,35,55,0.08)] backdrop-blur [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      className="sticky top-2 z-30 mt-3 mb-4 overflow-x-auto rounded-xl border border-slate-200 bg-white/95 px-2 shadow-[0_3px_12px_rgba(15,35,55,0.08)] backdrop-blur scrollbar-none [&::-webkit-scrollbar]:hidden"
     >
       <ul className="flex min-w-max items-center gap-1 py-1">
         {sections.map(([label, href], index) => (

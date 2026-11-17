@@ -12,7 +12,7 @@ export function Hotel({ deal }: { deal: DealData }) {
       <h2 className="mb-6 text-2xl font-black uppercase tracking-tight text-slate-900">Parliament Hotel</h2>
 
       <div className="grid gap-6 md:grid-cols-[1fr_1.2fr]">
-        <div className="relative min-h-[250px] overflow-hidden rounded-2xl border border-slate-200">
+        <div className="relative min-h-62.5 overflow-hidden rounded-2xl border border-slate-200">
           {image ? <Image src={image} alt={hotel?.name ?? "Hotel"} fill className="object-cover" /> : null}
         </div>
 

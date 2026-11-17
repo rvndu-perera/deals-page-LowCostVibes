@@ -43,7 +43,7 @@ export function Overview({ deal }: { deal: DealData }) {
           {gallery.map(({ src, alt, caption }, index) => (
             <figure
               key={src}
-              className="relative m-0 aspect-[3/2] overflow-hidden rounded-lg bg-slate-200"
+              className="relative m-0 aspect-3/2 overflow-hidden rounded-lg bg-slate-200"
             >
               <Image
                 src={src}
@@ -53,7 +53,7 @@ export function Overview({ deal }: { deal: DealData }) {
                 className="object-cover"
               />
               {caption && (
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent px-2 pb-2 pt-6 text-xs font-medium text-white">
+                <figcaption className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/75 to-transparent px-2 pb-2 pt-6 text-xs font-medium text-white">
                   {caption}
                 </figcaption>
               )}
@@ -100,7 +100,7 @@ function DealSidebar({ deal }: { deal: DealData }) {
         <div className="space-y-2">
           <a
             href={`mailto:${deal.contactEmail ?? "info@lowcostvibes.com"}`}
-            className="flex min-h-[58px] items-center gap-3 rounded-lg bg-white px-3 py-2 text-[#173f68] shadow-sm transition hover:bg-slate-50"
+            className="flex min-h-14.5 items-center gap-3 rounded-lg bg-white px-3 py-2 text-[#173f68] shadow-sm transition hover:bg-slate-50"
           >
             <span aria-hidden="true" className="text-xl font-semibold">@</span>
             <span className="min-w-0 flex-1">
@@ -114,7 +114,7 @@ function DealSidebar({ deal }: { deal: DealData }) {
 
           <a
             href="#enquiry"
-            className="flex min-h-[58px] items-center gap-3 rounded-lg bg-[#a60000] px-3 py-2 text-white shadow-sm transition hover:bg-[#8f0000]"
+            className="flex min-h-14.5 items-center gap-3 rounded-lg bg-[#a60000] px-3 py-2 text-white shadow-sm transition hover:bg-[#8f0000]"
           >
             <span aria-hidden="true" className="text-base">!</span>
             <span className="min-w-0 flex-1">
@@ -127,7 +127,7 @@ function DealSidebar({ deal }: { deal: DealData }) {
           {deal.contactNo && (
             <a
               href={`tel:${deal.contactNo.replace(/[^\d+]/g, "")}`}
-              className="flex min-h-[58px] items-center gap-3 rounded-lg bg-[#173f68] px-3 py-2 text-white shadow-sm transition hover:bg-[#102f50]"
+              className="flex min-h-14.5 items-center gap-3 rounded-lg bg-[#173f68] px-3 py-2 text-white shadow-sm transition hover:bg-[#102f50]"
             >
               <span aria-hidden="true" className="text-base">☎</span>
               <span className="min-w-0 flex-1">

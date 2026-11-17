@@ -2,7 +2,7 @@ import type { DealData } from "@/types/deal";
 
 export function Enquiry({ deal }: { deal: DealData }) {
   return (
-    <section id="enquiry" className="mt-10 rounded-[28px] border border-slate-200 bg-gradient-to-r from-sky-950 to-sky-900 p-6 text-white shadow-sm md:p-8">
+    <section id="enquiry" className="mt-10 rounded-[28px] border border-slate-200 bg-linear-to-r from-sky-950 to-sky-900 p-6 text-white shadow-sm md:p-8">
       <div className="grid gap-6 md:grid-cols-[1fr_0.8fr] md:items-center">
         <div>
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-sky-200">Plan your trip</p>
