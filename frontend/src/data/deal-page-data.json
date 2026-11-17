@@ -36,21 +36,25 @@
 			{
 				"path": "https://cdn.techneapp-staging.site/deals/1037/overview/0a7ae6b5-27a0-49a0-b5e0-8f1a449843a3.jpg",
 				"alt": "Low cost holidays to Bucharest Romania with Low Cost Vibes, Top UK Travel Agents for the best holiday deals",
+				"caption": "Town of Sighisoara",
 				"type": "image"
 			},
 			{
 				"path": "https://cdn.techneapp-staging.site/deals/1037/overview/5d3d254b-2d11-4d48-94e0-fc941b840347.jpg",
 				"alt": "Low cost holidays to Bucharest Romania with Low Cost Vibes, Top UK Travel Agents for the best holiday deals",
+				"caption": "Bran Castle",
 				"type": "image"
 			},
 			{
 				"path": "https://cdn.techneapp-staging.site/deals/1037/overview/343c9851-25c8-4b0d-b891-9d1eabb041c3.jpg",
 				"alt": "Low cost holidays to Bucharest Romania with Low Cost Vibes, Top UK Travel Agents for the best holiday deals",
+				"caption": "Unirii Square",
 				"type": "image"
 			},
 			{
 				"path": "https://cdn.techneapp-staging.site/deals/1037/overview/32e9791d-330f-4210-9359-60ca02e6eadc.jpg",
 				"alt": "Low cost holidays to Bucharest Romania with Low Cost Vibes, Top UK Travel Agents for the best holiday deals",
+				"caption": "Romanian Athenaeum",
 				"type": "image"
 			},
 			{
@@ -426,7 +430,8 @@
 	"promotionBanner": null,
 	"discountType": "Percentage",
 	"dealPromotionPopupConfigurations": [],
-	"contactNo": null,
+	"contactNo": "+44 7440 669 199",
+	"contactEmail": "info@lowcostvibes.com",
 	"priceCaption": null,
 	"preBookingAmount": 0,
 	"preBookingStatus": false,
