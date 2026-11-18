@@ -6,11 +6,11 @@ A modern, responsive, high-converting travel deal landing page built for **Low C
 
 ## 🔗 Project Links
 
-| Resource | Link |
-| :--- | :--- |
-| 🌐 **Live Demo (Netlify)** | `https://low-cost-vibe.netlify.app` *(Replace with your Netlify Host Link)* |
-| 🎨 **Figma Design File** | `https://www.figma.com/design/...` *(Replace with your Figma File Link)* |
-| 💻 **Source Repository** | `https://github.com/...` *(Replace with your GitHub Repository Link)* |
+| Resource                   | Link                                                                                                |
+| :------------------------- | :-------------------------------------------------------------------------------------------------- |
+| 🌐 **Live Demo (Netlify)** | `low-cost-vibe-deals-page.netlify.app`                                                              |
+| 🎨 **Figma Design File**   | `https://www.figma.com/design/JTobpWrsmTmZgzSSbVQL8r/rvndu-design?node-id=0-1&t=qDs6dRBZpy9UbAqY-1` |
+| 💻 **Source Repository**   | `https://github.com/rvndu-perera/deals-page-LowCostVibes.git`                                       |
 
 ---
 
@@ -62,10 +62,10 @@ A modern, responsive, high-converting travel deal landing page built for **Low C
 
 7. **Hotel Showcase (`Hotel.tsx`):**
    - 4.0 Star rating badge and hotel photo slider with left/right controls.
-   - 3×3 room amenities grid with custom icons (*Air Conditioned, Room Services, Housekeeping, Mini Bar, Private Bathrooms, Telephone Connection, Free Wi-Fi, Laundry Services, Safe Guaranteed*).
+   - 3×3 room amenities grid with custom icons (_Air Conditioned, Room Services, Housekeeping, Mini Bar, Private Bathrooms, Telephone Connection, Free Wi-Fi, Laundry Services, Safe Guaranteed_).
 
 8. **Destinations & Map View (`Destinations.tsx`):**
-   - Card deck highlighting key stops (*Bucharest, Trans Lavinia, Unirii Square*).
+   - Card deck highlighting key stops (_Bucharest, Trans Lavinia, Unirii Square_).
    - Embedded regional transit map preview with direct access link to Google Maps.
 
 9. **Activities & Excursions (`Excursions.tsx`):**
@@ -73,7 +73,7 @@ A modern, responsive, high-converting travel deal landing page built for **Low C
    - Featured full-height Transylvania promotional banner.
 
 10. **Transparent Payment Schedule (`Payment.tsx`):**
-    - Security hero banner with centered accepted payment methods pill (*Visa, Mastercard, Amex, Google Pay, Apple Pay, PayPal*).
+    - Security hero banner with centered accepted payment methods pill (_Visa, Mastercard, Amex, Google Pay, Apple Pay, PayPal_).
     - Structured deposit cards (25% initial deposit, monthly balance, 35% final settlement).
     - Quick payment action button.
 
@@ -149,11 +149,13 @@ cd frontend
 ### 3. Install Dependencies
 
 Using `npm`:
+
 ```bash
 npm install
 ```
 
 Or using `pnpm`:
+
 ```bash
 pnpm install
 ```
@@ -172,12 +174,12 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 Inside the `frontend` directory, you can run:
 
-| Command | Description |
-| :--- | :--- |
-| `npm run dev` | Starts the Next.js development server with Turbopack. |
-| `npm run build` | Compiles the production build. |
-| `npm run start` | Starts the production server after building. |
-| `npm run lint` | Runs ESLint to check for code quality and style issues. |
+| Command            | Description                                                  |
+| :----------------- | :----------------------------------------------------------- |
+| `npm run dev`      | Starts the Next.js development server with Turbopack.        |
+| `npm run build`    | Compiles the production build.                               |
+| `npm run start`    | Starts the production server after building.                 |
+| `npm run lint`     | Runs ESLint to check for code quality and style issues.      |
 | `npx tsc --noEmit` | Runs the TypeScript compiler to verify all type definitions. |
 
 ---
