@@ -6,11 +6,25 @@ A modern, responsive, high-converting travel deal landing page built for **Low C
 
 ## 🔗 Project Links
 
-| Resource                   | Link                                                                                                |
-| :------------------------- | :-------------------------------------------------------------------------------------------------- |
-| 🌐 **Live Demo (Netlify)** | `low-cost-vibe-deals-page.netlify.app`                                                              |
-| 🎨 **Figma Design File**   | `https://www.figma.com/design/JTobpWrsmTmZgzSSbVQL8r/rvndu-design?node-id=0-1&t=qDs6dRBZpy9UbAqY-1` |
-| 💻 **Source Repository**   | `https://github.com/rvndu-perera/deals-page-LowCostVibes.git`                                       |
+<p align="left">
+  <a href="https://low-cost-vibe-deals-page.netlify.app" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Live_Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo on Netlify" />
+  </a>
+  &nbsp;
+  <a href="https://www.figma.com/design/JTobpWrsmTmZgzSSbVQL8r/rvndu-design?node-id=0-1&t=qDs6dRBZpy9UbAqY-1" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Figma_Design-File-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma Design File" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/rvndu-perera/deals-page-LowCostVibes" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/GitHub_Repository-Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository" />
+  </a>
+</p>
+
+| Resource | Direct Link |
+| :--- | :--- |
+| 🌐 **Live Demo (Netlify)** | [https://low-cost-vibe-deals-page.netlify.app](https://low-cost-vibe-deals-page.netlify.app) |
+| 🎨 **Figma Design File** | [View Figma Design Board](https://www.figma.com/design/JTobpWrsmTmZgzSSbVQL8r/rvndu-design?node-id=0-1&t=qDs6dRBZpy9UbAqY-1) |
+| 💻 **Source Repository** | [https://github.com/rvndu-perera/deals-page-LowCostVibes](https://github.com/rvndu-perera/deals-page-LowCostVibes) |
 
 ---
 
