@@ -42,6 +42,7 @@ export type DealData = {
   farePrice?: string;
   currency?: string;
   saveUpto?: number;
+  dealOfferEndCaption?: string;
   finePrint?: string;
   contactEmail?: string | null;
   contactNo?: string | null;

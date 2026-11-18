@@ -33,7 +33,7 @@ export function Hero({ deal }: { deal: DealData }) {
   const sideImages = [
     heroImages[1],
     heroImages[2],
-    deal.overview.images?.[0],
+    deal.overview?.images?.[0],
   ];
   const discount = deal.farePrice
     ? Math.max(
@@ -45,22 +45,36 @@ export function Hero({ deal }: { deal: DealData }) {
         ),
       )
     : 0;
-  const nights =
-    deal.dealDestinations?.[0]?.noOfNights ?? 3;
+  const nights = deal.dealDestinations?.[0]?.noOfNights ?? 3;
+  const destination = deal.dealDestinations?.[0]?.destination?.name ?? "Bucharest";
+  const dealCaption = deal.dealOfferEndCaption ?? "Super Deal";
 
   return (
     <section
       aria-label="Holiday deal"
-      className="relative mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-[0_4px_16px_rgba(15,35,55,0.12)]"
+      className="relative mt-3 overflow-hidden rounded-2xl bg-white shadow-[0_4px_16px_rgba(15,35,55,0.1)]"
     >
       <div className="grid h-105 grid-cols-1 gap-1.5 bg-white p-1.5 sm:h-120 md:h-[clamp(360px,38vw,680px)] md:grid-cols-[minmax(0,3.15fr)_minmax(210px,1fr)]">
-        <div className="relative min-h-0 overflow-hidden rounded-lg">
+        <div className="relative min-h-0 overflow-hidden rounded-xl">
           <ImageTile image={heroImages[0]} alt={deal.title} priority />
-          <div className="absolute inset-0 bg-linear-to-r from-[#061c2d]/70 via-[#061c2d]/35 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 top-0 flex items-center px-5 pb-8 sm:px-8 md:px-10">
+          <div className="absolute inset-0 bg-linear-to-r from-[#061c2d]/85 via-[#061c2d]/45 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 top-0 flex flex-col justify-center px-5 pb-8 sm:px-8 md:px-10">
+            {/* Tag / Eyebrow */}
+            <div className="mb-2">
+              <span className="inline-block rounded-full bg-white/20 px-3 py-1 text-xs font-semibold tracking-wide text-white backdrop-blur-md">
+                {nights} Nights in {destination} - {dealCaption}
+              </span>
+            </div>
+
+            {/* Title */}
             <h1 className="max-w-225 text-[clamp(2rem,3.7vw,4.5rem)] font-extrabold uppercase leading-[0.98] tracking-[-0.035em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]">
               {deal.title}
             </h1>
+
+            {/* Inclusions Subtitle */}
+            <p className="mt-3 max-w-xl text-xs font-medium text-white/90 drop-shadow sm:text-sm md:text-base">
+              Return from london, 4 Star Hotel and Complementry trip to the Transylavinia
+            </p>
           </div>
         </div>
 
@@ -72,7 +86,7 @@ export function Hero({ deal }: { deal: DealData }) {
           ))}
         </div>
 
-        <div className="absolute bottom-5 right-[calc(25%+1rem)] z-10 hidden w-57.5 rounded-lg border border-slate-200 bg-white p-3.5 text-[#173f68] shadow-[0_8px_24px_rgba(5,24,44,0.22)] md:block">
+        <div className="absolute bottom-5 right-[calc(25%+1rem)] z-10 hidden w-57.5 rounded-xl bg-white p-3.5 text-[#173f68] shadow-[0_8px_24px_rgba(5,24,44,0.22)] md:block">
           <div className="flex items-center justify-between gap-2">
             <span className="text-[11px] font-medium text-slate-500">From</span>
             {discount > 0 && (
@@ -102,7 +116,7 @@ export function Hero({ deal }: { deal: DealData }) {
         </div>
       </div>
 
-      <div className="flex items-center justify-between gap-3 border-t border-slate-100 bg-white px-4 py-3 md:hidden">
+      <div className="flex items-center justify-between gap-3 bg-white px-4 py-3 md:hidden">
         <div className="min-w-0">
           <p className="text-[11px] font-medium text-slate-500">From per person · {nights} nights</p>
           <p className="text-xl font-extrabold text-[#173f68]">{formatPrice(deal.price)}</p>
