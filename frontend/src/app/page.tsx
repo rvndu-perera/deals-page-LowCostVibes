@@ -36,7 +36,7 @@ export default function Home() {
           </div>
 
           {/* Sticky sidebar: remains visible and fixed on the right until Testimonials is reached */}
-          <div className="min-w-0 md:sticky md:top-3">
+          <div className="min-w-0 md:sticky md:top-5">
             <DealSidebar deal={deal} />
           </div>
         </div>

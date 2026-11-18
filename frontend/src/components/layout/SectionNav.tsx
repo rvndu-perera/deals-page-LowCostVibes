@@ -62,7 +62,7 @@ export function SectionNav() {
   return (
     <nav
       aria-label="Holiday details navigation"
-      className="sticky top-3 z-20 mt-4 mb-6 md:mt-5 md:mb-7 overflow-x-auto rounded-2xl bg-white/95 p-1.5 shadow-[0_2px_10px_rgba(0,0,0,0.06)] backdrop-blur-md scrollbar-none [&::-webkit-scrollbar]:hidden"
+      className="sticky top-5 z-20 mt-4 mb-6 md:mt-5 md:mb-7 overflow-x-auto rounded-2xl bg-white/95 p-1.5 shadow-[0_2px_10px_rgba(0,0,0,0.06)] backdrop-blur-md scrollbar-none [&::-webkit-scrollbar]:hidden"
     >
       <ul className="flex w-full min-w-max md:min-w-full items-center justify-between gap-1">
         {sections.map(({ label, id }) => {

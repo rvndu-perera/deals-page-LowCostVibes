@@ -15,7 +15,7 @@ export function DealSidebar({ deal }: { deal: DealData }) {
   const email = deal.contactEmail || "info@lowcostvibes.com";
 
   return (
-    <aside className="w-full">
+    <aside className="w-full mt-4 md:mt-5">
       {/* Offer Banner Card */}
       <div className="rounded-2xl bg-white p-2 shadow-xs">
         <Image

@@ -52,9 +52,9 @@ export function Hero({ deal }: { deal: DealData }) {
   return (
     <section
       aria-label="Holiday deal"
-      className="relative mt-3 overflow-hidden rounded-2xl bg-white shadow-[0_4px_16px_rgba(15,35,55,0.1)]"
+      className="relative mt-3 overflow-hidden rounded-2xl"
     >
-      <div className="grid h-105 grid-cols-1 gap-1.5 bg-white p-1.5 sm:h-120 md:h-[clamp(360px,38vw,680px)] md:grid-cols-[minmax(0,3.15fr)_minmax(210px,1fr)]">
+      <div className="grid h-105 grid-cols-1 gap-1.5 p-1.5 sm:h-120 md:h-[clamp(360px,38vw,680px)] md:grid-cols-[minmax(0,3.15fr)_minmax(210px,1fr)]">
         <div className="relative min-h-0 overflow-hidden rounded-xl">
           <ImageTile image={heroImages[0]} alt={deal.title} priority />
           <div className="absolute inset-0 bg-linear-to-r from-[#061c2d]/85 via-[#061c2d]/45 to-transparent" />
