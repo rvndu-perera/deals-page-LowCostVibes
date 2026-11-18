@@ -61,7 +61,7 @@ export function Hero({ deal }: { deal: DealData }) {
           <div className="absolute inset-x-0 bottom-0 top-0 flex flex-col justify-center px-5 pb-8 sm:px-8 md:px-10">
             {/* Tag / Eyebrow */}
             <div className="mb-2">
-              <span className="inline-block rounded-full bg-white/20 px-3 py-1 text-xs font-semibold tracking-wide text-white backdrop-blur-md">
+              <span className="text-xs font-semibold tracking-wide text-white drop-shadow">
                 {nights} Nights in {destination} - {dealCaption}
               </span>
             </div>
@@ -71,10 +71,29 @@ export function Hero({ deal }: { deal: DealData }) {
               {deal.title}
             </h1>
 
-            {/* Inclusions Subtitle */}
-            <p className="mt-3 max-w-xl text-xs font-medium text-white/90 drop-shadow sm:text-sm md:text-base">
-              Return from london, 4 Star Hotel and Complementry trip to the Transylavinia
-            </p>
+            {/* Inclusions Subtitle with icons [icon] [Text] */}
+            <div className="mt-3.5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-white/95 drop-shadow sm:text-sm">
+              <div className="inline-flex items-center gap-1.5">
+                <span className="material-symbols-rounded text-[18px] leading-none text-white">
+                  flight
+                </span>
+                <span>Return from London</span>
+              </div>
+
+              <div className="inline-flex items-center gap-1.5">
+                <span className="material-symbols-rounded text-[18px] leading-none text-white">
+                  hotel
+                </span>
+                <span>4 Star Hotel</span>
+              </div>
+
+              <div className="inline-flex items-center gap-1.5">
+                <span className="material-symbols-rounded text-[18px] leading-none text-white">
+                  tour
+                </span>
+                <span>Complementary trip to Transylvania</span>
+              </div>
+            </div>
           </div>
         </div>
 

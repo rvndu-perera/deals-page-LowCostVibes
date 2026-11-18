@@ -15,7 +15,7 @@ export function Payment({ deal }: { deal: DealData }) {
       </div>
 
       {/* Hero Banner with pay-back and pay-img pill */}
-      <div className="relative mb-3 flex h-[220px] w-full items-center justify-center overflow-hidden rounded-2xl sm:h-[280px] sm:rounded-3xl md:h-[320px]">
+      <div className="relative mb-3 flex h-55 w-full items-center justify-center overflow-hidden rounded-2xl sm:h-70 sm:rounded-3xl md:h-80">
         <Image
           src="/images/pay-back.png"
           alt="Payment security background"

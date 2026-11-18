@@ -32,7 +32,7 @@ export function Highlights({ deal }: { deal?: DealData }) {
       {/* Grid Layout */}
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
         {/* Card 1: Overall Benefits */}
-        <div className="group relative flex min-h-[380px] flex-col justify-end overflow-hidden rounded-[22px] p-6 shadow-sm md:min-h-[420px] md:p-8">
+        <div className="group relative flex min-h-95 flex-col justify-end overflow-hidden rounded-[22px] p-6 shadow-sm md:min-h-105 md:p-8">
           <Image
             src="/images/highlight -1.jpg"
             alt="Overall Benefits - London Big Ben"
@@ -42,7 +42,7 @@ export function Highlights({ deal }: { deal?: DealData }) {
             priority
           />
           {/* Dark gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 via-55% to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/45 via-55% to-transparent" />
 
           {/* Content */}
           <div className="relative z-10 space-y-3.5">
@@ -68,7 +68,7 @@ export function Highlights({ deal }: { deal?: DealData }) {
         </div>
 
         {/* Card 2: Near by Restaurants */}
-        <div className="group relative flex min-h-[380px] flex-col justify-end overflow-hidden rounded-[22px] p-6 shadow-sm md:min-h-[420px] md:p-8">
+        <div className="group relative flex min-h-95 flex-col justify-end overflow-hidden rounded-[22px] p-6 shadow-sm md:min-h-105 md:p-8">
           <Image
             src="/images/highlight-2.jpg"
             alt="Nearby Restaurants"
@@ -77,7 +77,7 @@ export function Highlights({ deal }: { deal?: DealData }) {
             className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
           />
           {/* Dark gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 via-55% to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/45 via-55% to-transparent" />
 
           {/* Content */}
           <div className="relative z-10 space-y-3.5">
@@ -103,7 +103,7 @@ export function Highlights({ deal }: { deal?: DealData }) {
         </div>
 
         {/* Card 3: Near by Attractions */}
-        <div className="group relative flex min-h-[240px] flex-col justify-end overflow-hidden rounded-[22px] p-6 shadow-sm md:col-span-2 md:min-h-[270px] md:p-8">
+        <div className="group relative flex min-h-60 flex-col justify-end overflow-hidden rounded-[22px] p-6 shadow-sm md:col-span-2 md:min-h-67.5 md:p-8">
           <Image
             src="/images/highlight-3.jpg"
             alt="Nearby Attractions - Bucharest"
@@ -112,7 +112,7 @@ export function Highlights({ deal }: { deal?: DealData }) {
             className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
           />
           {/* Dark gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 via-60% to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/50 via-60% to-transparent" />
 
           {/* Content */}
           <div className="relative z-10 space-y-3.5">

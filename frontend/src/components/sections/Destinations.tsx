@@ -14,7 +14,7 @@ const destinationList = [
     name: "Trans Lavinia",
     badge: "One Night",
     image: "/images/dstn-2.jpg",
-    hasUnderline: true,
+    hasUnderline: false,
     description:
       "The George Enescu Philharmonic Orchestra is housed in this magnificent neoclassical domed tower.",
   },
@@ -110,7 +110,7 @@ export function Destinations({ deal }: { deal?: DealData }) {
           href={mapUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative block aspect-[16/6] w-full overflow-hidden rounded-xl bg-[#1d3e48] transition hover:opacity-95"
+          className="group relative block aspect-16/6 w-full overflow-hidden rounded-xl bg-[#1d3e48] transition hover:opacity-95"
           title="Click to explore interactive map"
         >
           <Image

@@ -11,17 +11,20 @@ export function DealSidebar({ deal }: { deal: DealData }) {
     .filter(Boolean)
     .join(", ");
 
+  const phone = deal.contactNo || "+(44) 7440 669 199";
+  const email = deal.contactEmail || "info@lowcostvibes.com";
+
   return (
-    <aside className="w-full space-y-12">
+    <aside className="w-full">
       {/* Offer Banner Card */}
-      <div className="rounded-xl border border-slate-200 bg-white p-2 shadow-sm mt-5">
+      <div className="rounded-2xl bg-white p-2 shadow-xs">
         <Image
           src="/images/add-img.jpg"
           alt={`${deal.title} deal: ${priceDescription}. Book with confidence with financial protection, stress-free service, and handpicked hotels.`}
           width={768}
           height={1947}
           sizes="(max-width: 1024px) 100vw, 25vw"
-          className="h-auto w-full rounded-lg"
+          className="h-auto w-full rounded-xl"
           priority
         />
         <p className="sr-only">
@@ -29,67 +32,78 @@ export function DealSidebar({ deal }: { deal: DealData }) {
         </p>
       </div>
 
-      <hr className=""/>
+      {/* separate line with reduced opacity */}
+      <hr className="my-6 border-0 border-t border-slate-300/30" />
 
       {/* Contact Details */}
       <div>
-        <h3 className="mb-2 text-xs font-semibold text-slate-700">
+        <h3 className="mb-3 text-[14px] font-bold text-slate-800">
           Contact our Agents
         </h3>
-        <div className="space-y-2">
+
+        <div className="space-y-2.5">
+          {/* E-Mail Card */}
           <a
-            href={`mailto:${deal.contactEmail ?? "info@lowcostvibes.com"}`}
-            className="flex min-h-14.5 items-center gap-3 rounded-lg bg-white px-3 py-2 text-[#173f68] shadow-sm transition hover:bg-slate-50"
+            href={`mailto:${email}`}
+            className="flex items-center gap-3.5 rounded-2xl bg-white px-4 py-3.5 text-[#163a63] shadow-xs transition hover:bg-slate-50"
           >
-            <span aria-hidden="true" className="text-xl font-semibold">
-              @
+            <span className="material-symbols-rounded text-[26px] text-[#163a63]">
+              alternate_email
             </span>
             <span className="min-w-0 flex-1">
-              <span className="block text-xs text-slate-500">E-Mail</span>
-              <span className="block truncate text-xs font-semibold">
-                {deal.contactEmail ?? "info@lowcostvibes.com"}
+              <span className="block text-xs font-medium text-slate-500">
+                E-Mail
+              </span>
+              <span className="block truncate text-sm font-bold text-[#163a63]">
+                {email}
               </span>
             </span>
-            <span aria-hidden="true" className="text-lg text-slate-400">
-              →
+            <span className="material-symbols-rounded text-[22px] text-[#163a63]">
+              arrow_forward
             </span>
           </a>
 
+          {/* Enquiry Card */}
           <a
             href="#enquiry"
-            className="flex min-h-14.5 items-center gap-3 rounded-lg bg-[#a60000] px-3 py-2 text-white shadow-sm transition hover:bg-[#8f0000]"
+            className="flex items-center gap-3.5 rounded-2xl bg-[#920404] px-4 py-3.5 text-white shadow-xs transition hover:bg-[#800303]"
           >
-            <span aria-hidden="true" className="text-base font-bold">
-              !
+            <span className="material-symbols-rounded material-symbols-fill text-[26px] text-white">
+              error
             </span>
             <span className="min-w-0 flex-1">
-              <span className="block text-xs font-semibold">Enquiry</span>
-              <span className="block text-xs text-white/80">Request a Call</span>
+              <span className="block text-xs font-semibold text-white/90">
+                Enquiry
+              </span>
+              <span className="block text-sm font-bold text-white">
+                Request a Call
+              </span>
             </span>
-            <span aria-hidden="true" className="text-lg text-white/80">
-              →
+            <span className="material-symbols-rounded text-[22px] text-white">
+              arrow_forward
             </span>
           </a>
 
-          {deal.contactNo && (
-            <a
-              href={`tel:${deal.contactNo.replace(/[^\d+]/g, "")}`}
-              className="flex min-h-14.5 items-center gap-3 rounded-lg bg-[#173f68] px-3 py-2 text-white shadow-sm transition hover:bg-[#102f50]"
-            >
-              <span aria-hidden="true" className="text-base">
-                ☎
+          {/* Call Card */}
+          <a
+            href={`tel:${phone.replace(/[^\d+]/g, "")}`}
+            className="flex items-center gap-3.5 rounded-2xl bg-[#16385c] px-4 py-3.5 text-white shadow-xs transition hover:bg-[#122e4c]"
+          >
+            <span className="material-symbols-rounded text-[26px] text-white">
+              phone_in_talk
+            </span>
+            <span className="min-w-0 flex-1">
+              <span className="block text-xs font-semibold text-white/90">
+                Call
               </span>
-              <span className="min-w-0 flex-1">
-                <span className="block text-xs text-white/80">Call</span>
-                <span className="block text-xs font-semibold">
-                  {deal.contactNo}
-                </span>
+              <span className="block text-sm font-bold text-white">
+                {phone}
               </span>
-              <span aria-hidden="true" className="text-lg text-white/80">
-                →
-              </span>
-            </a>
-          )}
+            </span>
+            <span className="material-symbols-rounded text-[22px] text-white">
+              arrow_forward
+            </span>
+          </a>
         </div>
       </div>
     </aside>
