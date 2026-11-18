@@ -1,0 +1,8 @@
+# Netlify Configuration for Low Cost Vibes
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
